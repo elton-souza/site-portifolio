@@ -1,2 +1,0 @@
-color background: #020C53
-color font: #FFCA3D

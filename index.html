@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Portifólio</title>
 </head>
 <body>
-    <header>
-        <div class="bloco-header">
-            <div>
-                <img src="./img/logo.jpg" alt="">
+    <header> 
+        <div class= "cabecalho container">
+            <div class="bloco-logo"> 
+                <img src="./img/logo.jpg" alt="" class="logo">
             </div>
-            <nav>
-                <li>Sobre</li>
-                <li>Projetos</li>
-                <li>Contato</li>
-                <li><a href="#">Baixar CV</a></li>
+            <nav class="nav-bar">
+                <li class="nav-bar__itens"><a href="#">Sobre</a></li>
+                <li class="nav-bar__itens"><a href="#">Projetos</a></li>
+                <li class="nav-bar__itens"><a href="#">Contato</a></li>
             </nav>
         </div>
     </header>
+    <main>
+        <section class="apresentacao">
+            <div class="bloco-apresentacao">
+                <span data-apresentacao class="texto-apresentacao"></span>
+                <a href="#" class="botao-curriculo">Baixar CV</a>
+            </div>
+        </section>
+        <section class="sobre">
+
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
 </body>
 </html>

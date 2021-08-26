@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root{
+    --azul-padrao:#020C53;
+    --amarelo:#FFCA3D;
+    --amarelo-queimado:#886a19;
+    --p2-start:'Press Start 2P',cursive;
+}
+.container{
+    padding: 0 6%;
+}

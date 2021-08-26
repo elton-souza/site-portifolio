@@ -1,0 +1,56 @@
+@import url(base.css);
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--azul-padrao);
+    font-family: 'Press Start 2P', cursive;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar{
+    list-style: none;
+    display: flex;
+}
+.nav-bar__itens{
+    margin-left: 15px;
+}
+.nav-bar__itens a{
+    text-decoration: none;
+    color: var(--amarelo);
+    font-size: 18px;
+}
+.nav-bar__itens a:hover{
+    color: var(--amarelo-queimado);
+}
+.apresentacao{
+    background-color: black;
+    height: 600px;
+}
+.bloco-apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+.texto-apresentacao{
+    color:var(--amarelo);
+    font-size: 30px;
+}
+.botao-curriculo{
+    text-decoration: none;
+    color: black;
+    background-color:var(--amarelo);
+    padding: 15px;
+    border-radius: 10px;
+}
+.botao-curriculo:hover{
+    background-color: var(--amarelo-queimado);
+}
