@@ -37,7 +37,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content:space-evenly;
     height: 100%;
 }
 .texto-apresentacao{
@@ -53,4 +53,32 @@ body{
 }
 .botao-curriculo:hover{
     background-color: var(--amarelo-queimado);
+}
+.sobre{
+    position: relative;
+    padding: 10% 20%;
+}
+.sobre-bloco1{
+    background-color: var(--amarelo);
+    width: 70%;
+    height: 600px;
+    padding:  10%;
+    border-radius: 10px;
+}
+.sobre-bloco2{
+    position:absolute;
+    right: 20%;
+    top: 28%;
+}
+.sobre-bloco2 img{
+    border-radius: 10px;
+}
+.sobre-bloco1 h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.sobre-bloco1 p{
+    font-size: 14px;
+    line-height: 25px;
 }
