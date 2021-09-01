@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,12 @@
     <header> 
         <div class= "cabecalho container">
             <div class="bloco-logo"> 
-                <img src="./img/logo.jpg" alt="" class="logo">
+                <img src="./img/logo2.2.png" alt="" class="logo">
             </div>
             <nav class="nav-bar">
+                <li class="nav-bar__itens"><a onClick="window.scroll(100,0)">Inicio</a></li>
                 <li class="nav-bar__itens"><a href="#sobre">Sobre</a></li>
-                <li class="nav-bar__itens"><a href="#">Projetos</a></li>
+                <li class="nav-bar__itens"><a href="#projetos">Projetos</a></li>
                 <li class="nav-bar__itens"><a href="#">Contato</a></li>
             </nav>
         </div>
@@ -27,8 +28,8 @@
                 <a href="#" class="botao-curriculo">Baixar CV</a>
             </div>
         </section>
-        <section class="sobre">
-            <div class="sobre-bloco1" id="sobre">
+        <section class="sobre" id="sobre">
+            <div class="sobre-bloco1">
                 <h1>Sobre</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate facere ipsam nihil sapiente facilis veniam totam minima tenetur itaque, obcaecati ratione sed. Nihil ratione sapiente vitae consequatur, numquam exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae magni doloribus velit incidunt deleniti ipsum maxime deserunt et dignissimos in quisquam necessitatibus, quibusdam dolorum consequuntur tenetur. Quidem, fugit consequuntur!</p>
             </div>
@@ -37,9 +38,23 @@
             </div>
         </section>
         <section class="projetos container">
-
+            <h2 class="titulo" id="projetos">Projetos</h2>
+            <div class="container-projetos">
+                <div class="projeto-item">
+                    <h3 class="titulo-projetos">Lista de Tarefas</h3>
+                    <img src="./img/listadetarefas.png" alt="">
+                </div>
+                <div class="projeto-item">
+                    <h3 class="titulo-projetos">Calculadora</h3>
+                    <img src="./img/calculadora.png" alt="">
+                </div>
+                <div class="projeto-item">
+                    <h3 class="titulo-projetos">Portal de Notícias</h3>
+                    <img src="./img/portaldenoticias.png" alt="">
+                </div>
+            </div>
         </section>
     </main>
-    <script src="./js/app.js"></script>
+    <script src="./js/viewText.js"></script>
 </body>
 </html>

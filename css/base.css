@@ -6,5 +6,6 @@
     --p2-start:'Press Start 2P',cursive;
 }
 .container{
-    padding: 0 6%;
+    padding-left: 6%;
+    padding-right: 6%;
 }
