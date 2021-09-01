@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Portifólio</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Elton Souza</title>
 </head>
 <body>
     <header> 
@@ -17,7 +18,7 @@
                 <li class="nav-bar__itens"><a onClick="window.scroll(100,0)">Inicio</a></li>
                 <li class="nav-bar__itens"><a href="#sobre">Sobre</a></li>
                 <li class="nav-bar__itens"><a href="#projetos">Projetos</a></li>
-                <li class="nav-bar__itens"><a href="#">Contato</a></li>
+                <li class="nav-bar__itens"><a href="https://api.whatsapp.com/send?phone=+5596981337363">Contato</a></li>
             </nav>
         </div>
     </header>
@@ -30,31 +31,56 @@
         </section>
         <section class="sobre" id="sobre">
             <div class="sobre-bloco1">
-                <h1>Sobre</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate facere ipsam nihil sapiente facilis veniam totam minima tenetur itaque, obcaecati ratione sed. Nihil ratione sapiente vitae consequatur, numquam exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, recusandae magni doloribus velit incidunt deleniti ipsum maxime deserunt et dignissimos in quisquam necessitatibus, quibusdam dolorum consequuntur tenetur. Quidem, fugit consequuntur!</p>
+                <h1 class="titulo-principal titulo-sobre">Sobre</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate facere ipsam nihil sapiente facilis veniam totam minima tenetur itaque, obcaecati ratione sed. Nihil ratione sapiente vitae consequatur, numquam exercitationem?Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Eaque, recusandae magni doloribus velit incidunt deleniti ipsum maxime deserunt et dignissimos in quisquam necessitatibus, quibusdam dolorum consequuntur tenetur. Quidem, fugit consequuntur!</p>
+                <div class="tecnologias">
+                    <div>
+                        <img src="./img/html.svg" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div>
+                        <img src="./img/css.svg" alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div>
+                        <img src="./img/javascript.svg" alt="">
+                        <p>javascript</p>
+                    </div>
+                </div>
             </div>
             <div class="sobre-bloco2">
                 <img src="./img/profile.jpg" alt="">
             </div>
         </section>
-        <section class="projetos container">
-            <h2 class="titulo" id="projetos">Projetos</h2>
+        <section class="projetos container " id="projetos">
+            <h1 class="titulo-principal titulo">Projetos</h1>
             <div class="container-projetos">
-                <div class="projeto-item">
-                    <h3 class="titulo-projetos">Lista de Tarefas</h3>
-                    <img src="./img/listadetarefas.png" alt="">
-                </div>
-                <div class="projeto-item">
-                    <h3 class="titulo-projetos">Calculadora</h3>
-                    <img src="./img/calculadora.png" alt="">
-                </div>
-                <div class="projeto-item">
-                    <h3 class="titulo-projetos">Portal de Notícias</h3>
-                    <img src="./img/portaldenoticias.png" alt="">
-                </div>
+                <a href="https://elton-souza.github.io/ListaDeTarefas/">
+                    <div class="projeto-item">
+                        <h3 class="titulo-projetos">Lista de Tarefas</h3>
+                        <img src="./img/listadetarefas.png" alt="">
+                    </div>
+                </a>
+                <a href="https://elton-souza.github.io/Calculadora2/">
+                    <div class="projeto-item">
+                        <h3 class="titulo-projetos">Calculadora</h3>
+                        <img src="./img/calculadora.png" alt="">
+                    </div>
+                </a>
+                <a href="https://elton-souza.github.io/PortalDeNoticias/">
+                    <div class="projeto-item">
+                        <h3 class="titulo-projetos">Portal de Notícias</h3>
+                        <img src="./img/portaldenoticias.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="repositorio">
+                <a href="https://github.com/elton-souza" class="btn-git">Repositório GitHub</a>
             </div>
         </section>
     </main>
     <script src="./js/viewText.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

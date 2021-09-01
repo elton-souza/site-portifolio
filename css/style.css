@@ -4,6 +4,7 @@
     margin: 0;
     border: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 html{
     scroll-behavior: smooth;
@@ -23,16 +24,18 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.cabecalho-azul{
+    background-color:var(--azul-padrao)
+}
 .nav-bar{
     list-style: none;
     display: flex;
 }
 .nav-bar__itens{
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .nav-bar__itens a{
     cursor: pointer;
-    text-decoration: none;
     color: var(--amarelo);
     font-size: 16px;
 }
@@ -57,7 +60,6 @@ body{
     font-size: 30px;
 }
 .botao-curriculo{
-    text-decoration: none;
     color: black;
     background-color:var(--amarelo);
     padding: 15px;
@@ -75,19 +77,11 @@ body{
     background-color: var(--amarelo);
     width: 70%;
     height: 600px;
-    padding:  8%;
+    padding: 50px;
     border-radius: 10px;
+    border: 10px black solid;
 }
-.sobre-bloco2{
-    position:absolute;
-    right: 20%;
-    top: 30%;
-}
-.sobre-bloco2 img{
-    border-radius: 10px;
-}
-.sobre-bloco1 h1{
-    font-size: 25px;
+.titulo-sobre{
     font-weight: bold;
     margin-bottom: 30px;
 }
@@ -95,10 +89,32 @@ body{
     font-size: 14px;
     line-height: 25px;
 }
+.tecnologias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 500px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--azul-padrao);
+    margin-top: 50px;
+}
+.tecnologias div{
+    text-align: center;
+    color: white;
+}
+.sobre-bloco2{
+    position:absolute;
+    right: 18%;
+    top: 28%;
+}
+.sobre-bloco2 img{
+    border-radius: 10px;
+    border: 10px black solid;
+}
 .projetos{
     height: 100vh;
-    padding-top: 8%;
-    padding-bottom: 6%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 .container-projetos{
     display:grid;
@@ -108,7 +124,6 @@ body{
     margin-bottom: 50px;
 }
 .titulo{
-    font-size: 30px;
     color: var(--amarelo);
     text-align: center;
     margin-bottom: 60px;
@@ -116,7 +131,7 @@ body{
 .projeto-item{
     position: relative;
     background-color: var(--amarelo);
-    border: 5px white solid;
+    border: 10px black solid;
     border-radius: 10px;
     padding: 15px;
 }
@@ -124,20 +139,26 @@ body{
     font-size: 18px;
     text-align: center;
     margin: 20px 0;
+    color: black;
 }
 .projeto-item img{
     width: 100%;
     border-radius: 10px;
 }
-.btn-git{
-    width: 100px;
-    padding: 10px;
-    border:none;
-    background-color: var(--azul-padrao);
-    color: var(--amarelo);
-    border-radius: 10px;
-}
 .projeto-item:hover{
     cursor: pointer;
     opacity: .3;
+}
+.repositorio{
+    margin-top: 100px;
+    text-align: center;
+}
+.btn-git{
+    color: black;
+    background-color: var(--amarelo);
+    padding: 20px;
+    border-radius: 10px;
+}
+.btn-git:hover{
+    background-color: var(--amarelo-queimado);
 }
