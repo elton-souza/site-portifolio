@@ -5,10 +5,27 @@
     --amarelo-queimado:#886a19;
     --p2-start:'Press Start 2P',cursive;
 }
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--azul-padrao);
+    font-family: var(--p2-start);
+}
 .container{
     padding-left: 6%;
     padding-right: 6%;
 }
 .titulo-principal{
     font-size: 27px;
+}
+
+@media screen and (min-width:320px) and (max-width:680px) {
 }

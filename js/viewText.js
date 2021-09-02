@@ -1,4 +1,4 @@
-const textos = ["Olá, meu nome é Elton", "Desenvolvedor Front-End", "HTML", "CSS", "JavaScript", "React.JS"]
+const textos = ["Olá, meu nome é Elton", "Desenvolvedor Front-End", "HTML", "CSS", "JavaScript"]
 let index = 0
 let cont = 0
 function writeText(){
