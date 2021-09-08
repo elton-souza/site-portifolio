@@ -1,62 +1,74 @@
 @import url(base.css);
-.projetos{
+
+.projetos {
     height: 95vh;
-    padding-top: 6%;
+    padding-top: 5%;
     padding-bottom: 7%;
 }
-.container-projetos{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr ;
+
+.container-projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 70px;
     margin-bottom: 50px;
 }
-.titulo{
+
+.titulo {
     color: var(--amarelo);
     text-align: center;
     margin-bottom: 60px;
 }
-.projeto-item{
+
+.projeto-item {
     position: relative;
     background-color: var(--amarelo);
     border: 10px black solid;
     border-radius: 10px;
     padding: 15px;
 }
-.titulo-projetos{
+
+.titulo-projetos {
     font-size: 18px;
     text-align: center;
     margin: 20px 0;
     color: black;
 }
-.projeto-item img{
+
+.projeto-item img {
     width: 100%;
     border-radius: 10px;
 }
-.projeto-item:hover{
+
+.projeto-item:hover {
     cursor: pointer;
     opacity: .3;
 }
-.repositorio{
-    margin-top:80px;
+
+.repositorio {
+    margin-top: 80px;
     text-align: center;
 }
-.btn-git{
+
+.btn-git {
     color: black;
     background-color: var(--amarelo);
     padding: 25px;
     border-radius: 10px;
 }
-.btn-git:hover{
+
+.btn-git:hover {
     background-color: var(--amarelo-queimado);
 }
+
 @media screen and (min-width:320px) and (max-width:1024px) {
-    .projetos{
+    .projetos {
         height: auto;
         margin-top: 50px;
         margin: 30px 0;
     }
-    .container-projetos{
+
+    .container-projetos {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }

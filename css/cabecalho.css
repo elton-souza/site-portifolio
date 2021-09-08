@@ -1,5 +1,6 @@
 @import url(base.css);
-.cabecalho{
+
+.cabecalho {
     position: fixed;
     width: 100%;
     height: 100px;
@@ -10,31 +11,108 @@
     justify-content: space-between;
     align-items: center;
 }
-.cabecalho-azul{
-    background-color:var(--azul-padrao)
+
+.cabecalho-azul {
+    background-color: var(--azul-padrao)
 }
-.nav-bar{
+
+.btn-hamb,
+.hamb {
+    display: none;
+}
+
+.nav-bar {
     list-style: none;
     display: flex;
 }
-.nav-bar__itens{
+
+.nav-bar__itens {
     margin-left: 20px;
 }
-.nav-bar__itens a{
+
+.nav-bar__itens a {
     cursor: pointer;
     color: var(--amarelo);
     font-size: 16px;
 }
-.nav-bar__itens a:hover{
+
+.nav-bar__itens a:hover {
     color: var(--amarelo-queimado);
 }
 
-@media screen and (min-width:320px) and (max-width:1024px) {
-    .cabecalho{
+@media screen and (min-width:320px) and (max-width:720px) {
+    .cabecalho {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
-    .nav-bar{
+
+    .btn-hamb {
+        display: inline-block;
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+        z-index: 3;
+        right: 6%;
+    }
+
+    .hamb {
+        display: inline-block;
+        height: 30px;
+        width: 40px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hamb span {
+        display: block;
+        width: 40px;
+        height: 6px;
+        background-color: var(--amarelo);
+        margin-bottom: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transform-origin: 10%;
+        transition: all 0.3s;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
         display: none;
+        z-index: 1;
+    }
+
+    .nav-bar li {
+        margin-top: 25px;
+    }
+
+    .nav-bar li:first-child {
+        margin-top: 30px;
+    }
+
+    .btn-hamb:checked~.nav-bar {
+        display: flex;
+    }
+
+    input:checked~.hamb>span:nth-child(1) {
+        background-color: var(--amarelo);
+        transform: rotate(45deg);
+    }
+
+    input:checked~.hamb>span:nth-child(2) {
+        transition: none;
+        opacity: 0;
+    }
+
+    input:checked~.hamb>span:nth-child(3) {
+        background-color: var(--amarelo);
+        transform: rotate(-43deg);
     }
 }

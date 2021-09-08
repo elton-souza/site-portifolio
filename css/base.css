@@ -1,31 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-:root{
-    --azul-padrao:#020C53;
-    --amarelo:#FFCA3D;
-    --amarelo-queimado:#886a19;
-    --p2-start:'Press Start 2P',cursive;
+
+:root {
+    --azul-padrao: #020C53;
+    --amarelo: #FFCA3D;
+    --amarelo-queimado: #886a19;
+    --p2-start: 'Press Start 2P', cursive;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
     border: none;
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
-body{
+
+body {
     background-color: var(--azul-padrao);
     font-family: var(--p2-start);
 }
-.container{
+
+.container {
     padding-left: 6%;
     padding-right: 6%;
 }
-.titulo-principal{
+
+.titulo-principal {
     font-size: 27px;
 }
 
-@media screen and (min-width:320px) and (max-width:680px) {
-}
+@media screen and (min-width:320px) and (max-width:680px) {}
