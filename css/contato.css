@@ -1,0 +1,82 @@
+@import url(base.css);
+.contato{
+    height: 95vh;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+.bloco-contato{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.btn-contato{
+    width:200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--amarelo);
+    font-size: 16px;
+    font-family: var(--p2-start);
+    
+}
+.btn-contato:hover{
+    background-color: var(--amarelo-queimado);
+}
+.bloco-forms{
+    display: none;
+}
+.visivel{
+    
+    display: flex;
+}
+.forms{
+    width: 500px;
+    height: auto;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--amarelo);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.forms input{
+    margin: 10px 0;
+    height: 40px;
+    padding: 5px;
+}
+.forms textarea{
+    margin: 10px 0;
+    padding: 5px;
+    resize: vertical;
+}
+.forms input:hover,.forms input:focus, .forms textarea:hover,.forms textarea:focus{
+    outline: none;
+    border-color: var(--azul-padrao);
+    box-shadow: 0 0 0 3px var(--azul-padrao);
+}
+.btn-enviar{
+    background-color: var(--azul-padrao);
+    font-family: var(--p2-start);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 50px;
+}
+.btn-enviar:hover{
+    background-color: var(--azul-escuro);
+}
+@media screen and (max-width:545px) {
+    .bloco-contato{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .bloco-contato div{
+        margin-bottom: 20px;
+    }
+    .forms{
+        width: 100%;
+    }
+}

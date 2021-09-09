@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    margin-top: 100px;
+    text-align: center;
+}
+.titulo-envio{
+    color: var(--amarelo);
+    margin-bottom: 100px;
+}
+.btn-retornar{
+    background-color: var(--amarelo);
+    color: var(--preto);
+    padding: 20px;
+    border-radius: 10px;
+}
+.btn-retornar:hover{
+    background-color: var(--amarelo-queimado);
+}

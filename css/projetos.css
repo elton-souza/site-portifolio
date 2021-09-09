@@ -14,12 +14,6 @@
     margin-bottom: 50px;
 }
 
-.titulo {
-    color: var(--amarelo);
-    text-align: center;
-    margin-bottom: 60px;
-}
-
 .projeto-item {
     position: relative;
     background-color: var(--amarelo);

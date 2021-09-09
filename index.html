@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/apresentacao.css">
     <link rel="stylesheet" href="./css/sobre.css">
     <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/contato.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <title>Elton Souza</title>
 </head>
@@ -27,7 +28,7 @@
                 <li class="nav-bar__itens"><a onClick="window.scroll(100,0)">Inicio</a></li>
                 <li class="nav-bar__itens"><a href="#sobre">Sobre</a></li>
                 <li class="nav-bar__itens"><a href="#projetos">Projetos</a></li>
-                <li class="nav-bar__itens"><a href="https://api.whatsapp.com/send?phone=+5596981337363">Contato</a></li>
+                <li class="nav-bar__itens"><a href="#contato">Contato</a></li>
             </nav>
         </section>
     </header>
@@ -63,7 +64,7 @@
             </div>
         </section>
         <section class="projetos container " id="projetos">
-            <h1 class="titulo-principal titulo">Projetos</h1>
+            <h1 class="titulo-principal titulo-amarelo">Projetos</h1>
             <div class="container-projetos">
                 <a href="https://elton-souza.github.io/ListaDeTarefas/">
                     <div class="projeto-item">
@@ -86,6 +87,30 @@
             </div>
             <div class="repositorio">
                 <a href="https://github.com/elton-souza" class="btn-git">GitHub</a>
+            </div>
+        </section>
+        <section class="contato container" >
+            <h1 class="titulo-principal titulo-amarelo" id="contato">Contato</h1>
+            <div class="bloco-contato">
+                <div>
+                    <button class="btn-contato" data-email=0>Email</button>
+                </div>
+                <div>
+                    <button class="btn-contato" data-wpp >WhatsApp</button>
+                </div>
+            </div>
+            <div class="bloco-forms">
+                <form class="forms" action="https://formsubmit.co/elton.souza1515@hotmail.com" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required>
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" required>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" cols="40" rows="10" name="message" required></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/concluido.html">
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
             </div>
         </section>
     </main>
