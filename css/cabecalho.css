@@ -19,6 +19,7 @@
 .btn-hamb,
 .hamb {
     display: none;
+    cursor: pointer;
 }
 
 .nav-bar {
@@ -71,7 +72,6 @@
         background-color: var(--amarelo);
         margin-bottom: 5px;
         border-radius: 10px;
-        cursor: pointer;
         transform-origin: 10%;
         transition: all 0.3s;
     }
