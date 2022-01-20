@@ -24,5 +24,6 @@ document.querySelector('[data-email]').addEventListener('click', (btn)=>{
 })
 
 document.querySelector('[data-wpp]').addEventListener('click', ()=>{
-    window.location.href = 'https://api.whatsapp.com/send?phone=+5596981337363&text=Olá,+estou entrando em contato através do seu portifólio'
+    window.open('https://api.whatsapp.com/send?phone=+5596981337363&text=Olá,+estou entrando em contato através do seu portifólio','_blank');
+    // window.location.href = 'https://api.whatsapp.com/send?phone=+5596981337363&text=Olá,+estou entrando em contato através do seu portifólio'
 })

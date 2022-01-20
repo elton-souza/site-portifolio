@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/cabecalho.css">
-    <link rel="stylesheet" href="./css/apresentacao.css">
-    <link rel="stylesheet" href="./css/sobre.css">
-    <link rel="stylesheet" href="./css/projetos.css">
-    <link rel="stylesheet" href="./css/contato.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/apresentacao.css">
+    <link rel="stylesheet" href="./assets/css/sobre.css">
+    <link rel="stylesheet" href="./assets/css/projetos.css">
+    <link rel="stylesheet" href="./assets/css/contato.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <title>Elton Souza</title>
 </head>
 <body>
     <header> 
         <section class= "cabecalho container">
             <div class="bloco-logo"> 
-                <img src="./img/logo2.2.png" alt="" class="logo">
+                <img src="./assets/img/logo2.2.png" alt="" class="logo">
             </div>
             <input type="checkbox" class="btn-hamb">
             <div class="hamb">
@@ -36,65 +36,73 @@
         <section class="apresentacao">
             <div class="bloco-apresentacao">
                 <span data-apresentacao class="texto-apresentacao"></span>
-                <a href="./Curriculo.pdf" class="botao-curriculo">Baixar CV</a>
+                <a href="./Curriculo.pdf" target="_blank" class="botao-curriculo">Baixar CV</a>
             </div>
         </section>
         <section class="sobre" id="sobre">
             <div class="sobre-bloco1">
                 <h1 class="titulo-principal titulo-sobre">Sobre</h1>
                 <p>Meu nome é Elton, tenho 19 anos e sou de Santana-Amapá. Formado em Redes de Computadores(Nível médio) e estou cursando Tecnologia em Redes de Computadores(Nível Superior).<br>
-                    Tive contato com a programação no ensino médio na área de robótica e a partir daí nasceu a paixão pela programação. No início de 2021 iniciei os estudos na áres de Desenvolvimento Front-End, e todo dia busco aprimorar meu conhecimento para que um dia eu possa me tornar um Desenvolvedor Full-Stack.
+                    Tive contato com a programação no ensino médio na área de robótica e a partir daí nasceu a paixão pela programação. No início de 2021 iniciei os estudos na áres de Desenvolvimento Front-End, e todo dia busco aprimorar meus conhecimentos para que eu possa me tornar um Desenvolvedor Front-End.
                 </p>
                 <div class="tecnologias">
                     <div>
-                        <img src="./img/html.svg" alt="">
+                        <img src="./assets/img/html.svg" alt="">
                         <p>HTML</p>
                     </div>
                     <div>
-                        <img src="./img/css.svg" alt="">
+                        <img src="./assets/img/css.svg" alt="">
                         <p>CSS</p>
                     </div>
                     <div>
-                        <img src="./img/javascript.svg" alt="">
-                        <p>javascript</p>
+                        <img src="./assets/img/javascript.svg" alt="">
+                        <p>JavaScript</p>
+                    </div>
+                    <div>
+                        <img src="./assets/img/react.svg" alt="">
+                        <p>ReactJS</p>
+                    </div>
+                    <div>
+                        <img src="./assets/img/typescript.svg" alt="">
+                        <p>TypeScript</p>
                     </div>
                 </div>
             </div>
             <div class="sobre-bloco2">
-                <img src="./img/profile.jpg" alt="">
+                <img src="./assets/img/profile.jpg" alt="">
             </div>
         </section>
         <section class="projetos container " id="projetos">
             <h1 class="titulo-principal titulo-amarelo">Projetos</h1>
             <div class="container-projetos">
-                <a href="https://elton-souza.github.io/ListaDeTarefas/">
+                <a href="https://elton-souza.github.io/ListaDeTarefas/" target="_blank">
                     <div class="projeto-item">
                         <h3 class="titulo-projetos">Lista de Tarefas</h3>
-                        <img src="./img/listadetarefas.png" alt="">
+                        <img src="./assets/img/listadetarefas.png" alt="">
                     </div>
                 </a>
-                <a href="https://elton-souza.github.io/Calculadora2/">
+                <a href="https://elton-souza.github.io/Calculadora2/" target="_blank"> 
                     <div class="projeto-item">
                         <h3 class="titulo-projetos">Calculadora</h3>
-                        <img src="./img/calculadora.png" alt="">
+                        <img src="./assets/img/calculadora.png" alt="">
                     </div>
                 </a>
-                <a href="https://elton-souza.github.io/PortalDeNoticias/">
+                <a href="https://elton-souza.github.io/PortalDeNoticias/" target="_blank">
                     <div class="projeto-item">
                         <h3 class="titulo-projetos">Portal de Notícias</h3>
-                        <img src="./img/portaldenoticias.png" alt="">
+                        <img src="./assets/img/portaldenoticias.png" alt="">
                     </div>
                 </a>
             </div>
             <div class="repositorio">
-                <a href="https://github.com/elton-souza" class="btn-git">GitHub</a>
+                <a href="https://github.com/elton-souza" class="btn-git" target="_blank">GitHub</a>
             </div>
         </section>
         <section class="contato container" >
             <h1 class="titulo-principal titulo-amarelo" id="contato">Contato</h1>
             <div class="bloco-contato">
                 <div>
-                    <button class="btn-contato" data-email=0>Email</button>
+                    <button class="btn-contato" data-email>Email</button>
                 </div>
                 <div>
                     <button class="btn-contato" data-wpp >WhatsApp</button>
